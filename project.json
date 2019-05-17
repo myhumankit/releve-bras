@@ -1,0 +1,37 @@
+{
+    "project": {
+        "full_name": "Relève bras",
+        "slug": "releve-bras",
+        "short_description": "Un dispositif réglable pour soulager le bras en position relevée.",
+        "lang": "fr",
+        "license": "CC BY",
+        "about": "Un dispositif réglable pour soulager le bras en position relevée.",
+        "status": "draft",
+        "links": [
+            {
+                "url": "https://rennes.humanlab.me/projet/releve-bras/",
+                "text": "page d'accueil du projet sur le GesLab",
+                "fa5_icon": "fas fa-home"
+            },
+            {
+                "url": "http://wikilab.myhumankit.org/index.php?title=Projets:Releve_bras",
+                "text": "page wiki du projet sur le wiki du Humanlab",
+                "fa5_icon": "fab fa-wikipedia-w"
+            },
+            
+            {
+                "url": "https://github.com/myhumankit/releve-bras",
+                "text": "code source de la documentation sur GitHub",
+                "fa5_icon": "fab fa-github"
+            }
+        ],
+        "contributors": [
+            {
+                "full_name": "Julien Lebunetel",
+                "email": "julien@myhumankit.org",
+                "github_username": "jlebunetel",
+                "role": "Fabmanager référent"
+            }
+        ]
+    }
+}
