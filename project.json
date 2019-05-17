@@ -18,7 +18,6 @@
                 "text": "page wiki du projet sur le wiki du Humanlab",
                 "fa5_icon": "fab fa-wikipedia-w"
             },
-            
             {
                 "url": "https://github.com/myhumankit/releve-bras",
                 "text": "code source de la documentation sur GitHub",
@@ -27,10 +26,109 @@
         ],
         "contributors": [
             {
+                "full_name": "Myriam Gour",
+                "role": "Porteur de projet"
+            },
+            {
                 "full_name": "Julien Lebunetel",
+                "role": "Fabmanager référent",
                 "email": "julien@myhumankit.org",
-                "github_username": "jlebunetel",
-                "role": "Fabmanager référent"
+                "github_username": "jlebunetel"
+            }
+        ],
+        "steps": [
+            {
+                "title": "Prise de mesures",
+                "duration": 300,
+                "content": "Prendre les mesures de la hanche et du coude pour modéliser les supports.",
+                "inputs": [
+                    {
+                        "tool": {
+                            "slug": "pied-a-coulisse",
+                            "github_organization": "myhumankit",
+                            "github_repository": "myworkshop-humanlab-tools"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Bras télescopique",
+                "duration": 300,
+                "content": "Récupérer l'un des bras télescopique d'un trépied photo lowcost.\nPrendre les mesures du tube pour modéliser les supports."
+            },
+            {
+                "title": "Modélisation",
+                "duration": 300,
+                "content": "Adapter les modèles au mesures prises précédemment et exporter les modèles 3D au format `stl` pour l'impression 3D.",
+                "inputs": [
+                    {
+                        "tool": {
+                            "slug": "FreeCAD",
+                            "github_organization": "myhumankit",
+                            "github_repository": "myworkshop-humanlab-tools"
+                        }
+                    },
+                    {
+                        "file": {
+                            "name": "Modèle paramétrique du support coté coude",
+                            "url": "models/coude.FCStd"
+                        }
+                    },
+                    {
+                        "file": {
+                            "name": "Modèle paramétrique du support coté hanche",
+                            "url": "models/hanche.FCStd"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Impression des supports",
+                "duration": 300,
+                "content": "Trancher et imprimer les fichiers `stl` issus de l'étape précédente.",
+                "inputs": [
+                    {
+                        "tool": {
+                            "slug": "Cura",
+                            "github_organization": "myhumankit",
+                            "github_repository": "myworkshop-humanlab-tools"
+                        }
+                    },
+                    {
+                        "tool": {
+                            "slug": "imprimante-3d",
+                            "github_organization": "myhumankit",
+                            "github_repository": "myworkshop-humanlab-tools"
+                        }
+                    },
+                    {
+                        "component": {
+                            "slug": "filament-PLA",
+                            "quantity": 100,
+                            "github_organization": "myhumankit",
+                            "github_repository": "myworkshop-humanlab-components"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Assemblage",
+                "duration": 300,
+                "content": "",
+                "inputs": [
+                    {
+                        "screw": {
+                            "quantity": 2,
+                            "material": "stainless steel",
+                            "head": "C",
+                            "head_option": "",
+                            "driving": "HC",
+                            "threading": "M",
+                            "diameter": 3,
+                            "length": 25
+                        }
+                    }
+                ]
             }
         ]
     }
