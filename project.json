@@ -127,6 +127,12 @@
                             "diameter": 3,
                             "length": 25
                         }
+                    },
+                    {
+                        "component": {
+                            "slug": "mousse.json",
+                            "quantity": 2
+                        }
                     }
                 ]
             }
