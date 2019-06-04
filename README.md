@@ -4,7 +4,7 @@
 
 Un dispositif réglable pour soulager le bras en position relevée.
 
-![featured_image](https://raw.githubusercontent.com/myhumankit/myworkshop/master/images/default_featured_image.jpg)
+![featured_image](images/20190604_144918-2.jpg)
 
 ## Liens
  * [documentation du projet](https://docs.humanlab.me/myhumankit/releve-bras)
