@@ -136,6 +136,14 @@
                     }
                 ]
             }
+        ],
+        "featured_images": [
+            {
+                "image": {
+                    "url": "images/20190604_144918-2.jpg",
+                    "caption": "releve-bras"
+                }
+            }
         ]
     }
 }
